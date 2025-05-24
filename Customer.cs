@@ -23,8 +23,10 @@ namespace Accounting_Software
         public Customer() { }
 
         public decimal GetBalance()
+
         {
             return Transactions.Sum(t => t.Type == TransactionType.Credit ? t.Amount : -t.Amount);
         }
+
     }
 }

@@ -63,6 +63,7 @@
     <Compile Include="Sale.cs" />
     <Compile Include="SimpleTransaction.cs" />
     <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionType.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Vendor.cs" />
   </ItemGroup>

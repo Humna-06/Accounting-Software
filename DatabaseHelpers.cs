@@ -10,17 +10,23 @@ namespace Accounting_Software
 {
     internal class DatabaseHelpers
     {
+        private readonly string _connectionString = @"Data Source=DESKTOP-MCQ2T8F\\SQLEXPRESS;Initial Catalog=AccountingSoftware;Integrated Security=True";
 
-        private readonly string _connectionString;
+
+
 
         public DatabaseHelpers(string connectionString)
         {
             _connectionString = connectionString;
+            Console.WriteLine($"Using Connection String: {@"Data Source=DESKTOP-MCQ2T8F\\SQLEXPRESS;Initial Catalog=AccountingSoftware;Integrated Security=True"}");
+
         }
 
         private SqlConnection GetConnection()
         {
-            return new SqlConnection(_connectionString);
+            return new SqlConnection(@"Data Source=DESKTOP-MCQ2T8F\\SQLEXPRESS;Initial Catalog=AccountingSoftware;Integrated Security=True");
+
+        
         }
 
         // General method for executing Non-Query (Insert, Update, Delete)

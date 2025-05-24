@@ -40,7 +40,15 @@ namespace Accounting_Software
 
             Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
-        
-    }
+            Transaction transaction = new Transaction();
+            transaction.Type = TransactionType.Credit;
+            transaction.Amount = 1000;
+
+            Console.WriteLine($"Transaction Type: {transaction.Type}, Amount: {transaction.Amount}");
+
+
+
+
+        }
     }
 }
